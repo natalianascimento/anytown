@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Hook implementatios for anytown module.
+ */
+
+/**
+ * Implements hook_theme().)
+ */
+function anytown_theme() {
+  return [
+    'weather_page' => [ // we define a new theme hook named weather_page
+      'variables' => [
+        'weather_intro' => '',
+        'weather_forecast' => '',
+        'short_forecast' => '',
+        'weather_closures' => '',
+      ],
+    ], // With this setup, you can use this theme hook in a render array like this: '#theme' => 'weather_page', and then provide values for each of the defined variables.
+  ];
+}
