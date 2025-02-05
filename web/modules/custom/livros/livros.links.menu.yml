@@ -1,0 +1,7 @@
+livros.menu_link:
+  title: 'Livro'
+  description: 'link para página do livro'
+  route_name: livros.livro
+  parent: system.admin_content
+  weight: 5
+  menu_name: main
