@@ -5,3 +5,11 @@ livros.livro:
     _title: 'Meu livro'
   requirements:
     _permission: 'access content'
+
+livros.adicionar_livro:
+  path: '/livros/adicionar'
+  defaults:
+    _form: '\Drupal\livros\Form\LivrosForm'
+    _title: 'Adicionar livros'
+  requirements:
+    _permission: 'access content'
