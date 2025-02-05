@@ -13,16 +13,18 @@ function livros_schema() {
     'description' => 'Tabela para armazenar livros inseridos pelo usuário',
     'fields' => [
       'id' => [
+        'description' => 'Identificador único do livro.',
         'type' => 'serial',
         'not null' => true,
       ],
       'nome' => [
+        'description' => 'Nome do livro.',
         'type' => 'varchar',
         'length' => 255,
         'not null' => true,
       ],
     ],
-    'primary_key' => 'id',
+    'primary key' => ['id'],
   ];
   return $schema;
 }
