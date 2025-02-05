@@ -1,0 +1,7 @@
+livros.livro:
+  path: '/livros/livro'
+  defaults:
+    _controller: '\Drupal\livros\Controller\LivrosController::meuLivro'
+    _title: 'Meu livro'
+  requirements:
+    _permission: 'access content'
