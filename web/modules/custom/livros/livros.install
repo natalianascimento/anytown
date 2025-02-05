@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Instalação do modulo livros
+ */
+
+/**
+ * Implementa hook_schema().
+ */
+function livros_schema() {
+  $schema['livros'] = [
+    'description' => 'Tabela para armazenar livros inseridos pelo usuário',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => true,
+      ],
+      'nome' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => true,
+      ],
+    ],
+    'primary_key' => 'id',
+  ];
+  return $schema;
+}
