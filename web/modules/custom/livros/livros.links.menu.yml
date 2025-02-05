@@ -5,9 +5,25 @@ livros.menu_link:
   parent: system.admin_content
   weight: 5
   menu_name: main
+
 livros.menu_principal:
   title: "Livros principal"
   description: "Link no menu principal"
   route_name: livros.livro
   menu_name: main
   weight: 0
+
+livros.menu_customizado:
+  title: "Menu de livros"
+  description: "Um menu customizado para livros"
+  route_name: '<front>'
+  menu_name: main
+  weight: 0
+
+livros.menu_customizado_item:
+  title: "Livro item"
+  parent: livros.menu_customizado
+  route_name: livros.livro
+  menu_name: main
+  weight: 1
+
