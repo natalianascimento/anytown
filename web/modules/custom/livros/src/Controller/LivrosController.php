@@ -6,8 +6,12 @@ use Drupal\Core\Controller\ControllerBase;
 
 class LivrosController extends ControllerBase {
   public function meuLivro() {
+    $form = \Drupal::formBuilder()->getForm('\Drupal\livros\Form\LivrosForm');
+
     return [
-      '#markup' => $this->t('Ola')
+      '#title' => 'Cadastra Livro',
+      '#markup' => $this->t('Ola, insira um livro aqui'),
+      'form' => $form,
     ];
   }
 }
