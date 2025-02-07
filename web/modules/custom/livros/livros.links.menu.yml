@@ -7,23 +7,15 @@ livros.menu_link:
   menu_name: main
 
 livros.menu_principal:
-  title: "Livros principal"
+  title: "Cadastrar Livros"
   description: "Link no menu principal"
-  route_name: livros.livro
+  route_name: livros.adicionar_livro
   menu_name: main
-  weight: 0
+  weight: 2
 
 livros.menu_customizado:
   title: "Menu de livros"
   description: "Um menu customizado para livros"
-  route_name: '<front>'
-  menu_name: main
-  weight: 0
-
-livros.menu_customizado_item:
-  title: "Livro item"
-  parent: livros.menu_customizado
   route_name: livros.livro
   menu_name: main
-  weight: 1
-
+  weight: 0
