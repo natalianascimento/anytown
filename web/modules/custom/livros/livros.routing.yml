@@ -1,7 +1,7 @@
 livros.livro:
   path: '/livros/livro'
   defaults:
-    _controller: '\Drupal\livros\Controller\LivrosController::meuLivro'
+    _controller: '\Drupal\livros\Controller\LivrosController::cadastraLivro'
     _title: 'Meu livro'
   requirements:
     _permission: 'access content'
@@ -11,5 +11,13 @@ livros.adicionar_livro:
   defaults:
     _form: '\Drupal\livros\Form\LivrosForm'
     _title: 'Adicionar livros'
+  requirements:
+    _permission: 'access content'
+
+livros.exibir_livro:
+  path: '/exibir-livros'
+  defaults:
+    _controller: '\Drupal\livros\Controller\LivrosController::exibeLivro'
+    _title: 'Exibir Livros'
   requirements:
     _permission: 'access content'

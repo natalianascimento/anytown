@@ -1,0 +1,64 @@
+{
+  "livros": [
+    {
+      "titulo": "1984",
+      "autor": "George Orwell",
+      "ano": 1949,
+      "genero": "Ficção Distópica"
+    },
+    {
+      "titulo": "Dom Casmurro",
+      "autor": "Machado de Assis",
+      "ano": 1899,
+      "genero": "Romance"
+    },
+    {
+      "titulo": "O Hobbit",
+      "autor": "J.R.R. Tolkien",
+      "ano": 1937,
+      "genero": "Fantasia"
+    },
+    {
+      "titulo": "O Senhor das Moscas",
+      "autor": "William Golding",
+      "ano": 1954,
+      "genero": "Ficção"
+    },
+    {
+      "titulo": "Cem Anos de Solidão",
+      "autor": "Gabriel García Márquez",
+      "ano": 1967,
+      "genero": "Realismo Mágico"
+    },
+    {
+      "titulo": "A Revolução dos Bichos",
+      "autor": "George Orwell",
+      "ano": 1945,
+      "genero": "Sátira Política"
+    },
+    {
+      "titulo": "Crime e Castigo",
+      "autor": "Fiódor Dostoiévski",
+      "ano": 1866,
+      "genero": "Ficção Psicológica"
+    },
+    {
+      "titulo": "Orgulho e Preconceito",
+      "autor": "Jane Austen",
+      "ano": 1813,
+      "genero": "Romance"
+    },
+    {
+      "titulo": "O Nome do Vento",
+      "autor": "Patrick Rothfuss",
+      "ano": 2007,
+      "genero": "Fantasia"
+    },
+    {
+      "titulo": "Neuromancer",
+      "autor": "William Gibson",
+      "ano": 1984,
+      "genero": "Cyberpunk"
+    }
+  ]
+}
