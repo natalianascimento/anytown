@@ -111,22 +111,24 @@ class WeatherPage extends ControllerBase {
     }
 
     $build = [
-      'weather_intro' => [
-        '#theme' => 'weather_page',
-        '#weather_intro' => [
-          '#markup' => "<p>Check out this weekend's weather forecast and come prepared. Market is mostly outside, and takes place rain or shine.</p>",
+      // which theme hook tot use for this content. See anytown_theme().
+      '#theme' => 'weather_page',
+      // when passing a render array to twig template file any top level array
+      // element that starts with a '#' will be a variable in the template file.
+      // example: {{ weather_intro }}.
+      '#weather_intro' => [
+        '#markup' => "<p>Check out this weekend's weather forecast and come prepared. Market is mostly outside, and takes place rain or shine.</p>",
+      ],
+      'weather_forecast' => $weather_forecast,
+      '#short_forecast' => $short_forecast,
+      '#weather_closures' => [
+        '#theme' => 'item_list',
+        '#title' => 'Weather related closures',
+        '#items' => [
+          'Ice rink closed until winter - please stay off while we prepare it.',
+          'Parking behind Apple Lane is still closed from all the rain last weekend.'
         ],
-        'weather_forecast' => $weather_forecast,
-        '#short_forecast' => $short_forecast,
-        '#weather_closures' => [
-          '#theme' => 'item_list',
-          '#title' => 'Weather related closures',
-          '#items' => [
-            'Ice rink closed until winter - please stay off while we prepare it.',
-            'Parking behind Apple Lane is still closed from all the rain last weekend.'
-          ],
-        ],
-      ]
+      ],
     ];
 
     return $build;
