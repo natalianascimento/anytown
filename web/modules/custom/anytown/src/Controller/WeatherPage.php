@@ -111,8 +111,12 @@ class WeatherPage extends ControllerBase {
     }
 
     $build = [
-      // which theme hook tot use for this content. See anytown_theme().
+      // which theme hook to use for this content. See anytown_theme().
       '#theme' => 'weather_page',
+      // Attached the css and JS for the page
+      '#attached' => [
+        'library' => ['anytown/forecast'],
+      ],
       // when passing a render array to twig template file any top level array
       // element that starts with a '#' will be a variable in the template file.
       // example: {{ weather_intro }}.
